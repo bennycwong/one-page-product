@@ -6,7 +6,3 @@ $(document).ready(function() {
       $(this).removeClass('hover');
   });
 });
-(function() {
-
-
-}).call(this);

@@ -1,23 +1,141 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
-    <meta charset='utf-8'>
-    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
-    <meta content='width=device-width, initial-scale=1' name='viewport'>
-    <title>Page Title</title>
+    <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Gourmand Goods</title>
+    <link rel="import" href="https://www.polymer-project.org/0.5/components/paper-ripple/paper-ripple.html">
+
     <link href="assets/stylesheets/application.css" rel="stylesheet" type="text/css" />
+    <script src="assets/javascripts/application.js" type="text/javascript"></script>
   </head>
-  <body class='index'>
-    <div class='delete-me'>
-      <div class='container'>
-        <h1>Proteus</h1>
-        <p>
-          You're all set!
-          <a href="http://github.com/thoughtbot/proteus-middleman">Let's get started</a>
-          building your prototype.
-        </p>
+
+  <body class="index">
+
+<div id="">
+  <div class="header">
+
+  <div class="logo">
+    <div class="logo-text">
+      <h2>
+        Gourmand<br>
+        Goods
+      </h2>
+    </div>
+
+    <div class="logo-img">
+      <img src="assets/images/logo.png">
+    </div>
+  </div>
+
+  <div class="menu">
+    <a href="#reviews" class="touch-button button">Reviews</a>
+    <a href="#buy" class="touch-button button">Buy</a>
+  </div>
+</div>
+
+  <section class="hero text-center">
+  <img class="hero-logo" src="assets/images/logo.png">
+  <div>
+    <h1>Your moscow mules are epic.</h1>
+    <h1>Get the cup they deserve.</h1>
+  </div>
+</section>
+
+<section class="product">
+  <div class="row">
+    <div class="product-column" style="float: none;">
+      <img src="assets/images/mug.jpg" class="product-shot">
+        <div class="visible-xs">
+          <h3>Your moscow mules are epic. Get the cup they deserve.</h3>
+        </div>
+        <p>The Modern Utensils LED Camping Lantern brings modern day LED technology to the age old activtiy of camping. Fill your tent with 60 lumens of light without the smell and heat of dangerous gas laterns, and without the bulk of traditional battery powered lanterns.</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="sign-up">
+  <div class="row">
+    <div class="sign-up-column" style="float: none;">
+      <h3>Sign up to get to find out more about our future products and a 20% off coupon instantly.</h3>
+      <form action="#" method="post" name="sign up for deals">
+        <div class="input">
+          <input type="text" class="email" id="email" name="email" placeholder="Email">
+          <input type="submit" class="touch-button submit" id="submit" value="Yes, I Love Deals">
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="row">
+    <div class="reviews-column" style="float: none;">
+      <div>
+        <h4>Rave Reviews from</h4>
+        <img src="assets/images/amazon.png" class="amazon-logo">
+      </div>
+
+      <div class="row">
+          <div class="review ">
+            <h1>“</h1>
+            <p class="text">1. Beautiful design aside, the bottom line about the Fulton Cycle is that it’s simply a joy to ride and use.Beautiful design aside, ttom line about the Fulton Cycle is that it’s simply a joy to ride and use.</p>
+            <p class="reviewer">— A. Jane White, Verified Reviewer</p>
+          </div>
+          <div class="review ">
+            <h1>“</h1>
+            <p class="text">2. Beautiful design aside, the bottom line about the Fulton Cycle is that it’s simply a joy to ride and use.</p>
+            <p class="reviewer">— B. Jane White, Verified Reviewer</p>
+          </div>
+          <div class="review ">
+            <h1>“</h1>
+            <p class="text">3. Beautiful design aside, the bottom line about the Fulton Cycle is that it’s simply a joy to ride and use.</p>
+            <p class="reviewer">— C. Jane White, Verified Reviewer</p>
+          </div>
+          <div class="review ">
+            <h1>“</h1>
+            <p class="text">4. Beautiful design aside, the bottom line about the Fulton Cycle is that it’s simply a joy to ride and use. asdfasdfasdfadsfa</p>
+            <p class="reviewer">— D. Jane White, Verified Reviewer</p>
+          </div>
+          <div class="review ">
+            <h1>“</h1>
+            <p class="text">5. Beautiful design aside, the bottom line about the Fulton Cycle is that it’s simply a joy to ride and use.</p>
+            <p class="reviewer">— E. Jane White, Verified Reviewer</p>
+          </div>
+          <div class="review ">
+            <h1>“</h1>
+            <p class="text">5. Beautiful design aside, the bottom line about the Fulton Cycle is that it’s simply a joy to ride and use.</p>
+            <p class="reviewer">— E. Jane White, Verified Reviewer</p>
+          </div>
       </div>
     </div>
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script><script src="assets/javascripts/application.js" type="text/javascript"></script>
+  </div>
+</section>
+
+<section class="buy" id="buy">
+  <div class="row">
+    <div class="buy-column" style="float: none;">
+      <img src="assets/images/available-amazon.png" class="amazon-logo-avail">
+      <div class="cta"><a href="http://www.amazon.com/" class="touch-button button">Buy it now on Amazon.com</a></div>
+    </div>
+  </div>
+</section>
+
+  <footer>
+  <div class="row">
+    <div class="center-col-sm-6 text-center">
+      <p class="muted small">Built with love by <a href="http://squidmatic.com">Squidmatic, LLC</a>.</p>
+      <p class="muted small">Copyright © 2015</p>
+    </div>
+  </div>
+</footer>
+
+</div>
   </body>
+  <script src="assets/javascripts/reponse-to-touch.js" type="text/javascript"></script>
 </html>
